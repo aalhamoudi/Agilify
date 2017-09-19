@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"
+            integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <script>
+        $.ajax({
+            type: 'post',
+            url: 'http://agilify.azurewebsites.net/api/account/create',
+            contentType: "application/json; charset=utf-8",
+            dataType: "json"
+        });
+    </script>
+</body>
+</html>

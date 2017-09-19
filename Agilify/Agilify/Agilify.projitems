@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{1e37b521-9f45-4d3a-bdc5-3c4d6c9a1317}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Agilify</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Grouping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\IAuthenticate.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\IFilter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\IItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\IMessagingClient.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\IDataStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\SyncableObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AgileBug.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BacklogItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Deadline.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductBacklogItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\PortfolioBacklogItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\WorkItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ChatMessage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\AgileTask.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ChatThread.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Epic.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Feature.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Item.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Sprint.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Team.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Member.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\AccountManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\Settings.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SyncManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SyncStore.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BacklogPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ChatMessageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\DashboardViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MenuPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ItemsPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\PageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SprintsPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\TeamsPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProjectsPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Project.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ObservableObject.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\ObservableRangeCollection.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Helpers\MessengingCenterAlert.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\AccountPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\DashboardPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\DeadlinesPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\LoadingPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\LoginPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\MenuPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\RegistrationPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\RootPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\SettingsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ApplicationPages\TestPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreatePages\AddMemberPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreatePages\CreateWorkItemPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreatePages\CreateSprintPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreatePages\CreateItemPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreatePages\CreateProjectPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreatePages\CreateFeaturePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreatePages\CreateEpicPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CreatePages\CreateTeamPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPages\MemberDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPages\WorkItemDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPages\SprintDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPages\ItemDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPages\ProjectDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPages\FeatureDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPages\EpicDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\DetailPages\TeamDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPages\EditMemberPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPages\EditWorkItemPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPages\EditSprintPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPages\EditItemPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPages\EditProjectPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPages\EditFeaturePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPages\EditEpicPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\EditPages\EditTeamPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\BacklogPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\ChatPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\ItemsListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\ItemsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\EpicsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\WorkItemsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\MembersPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\SprintsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\FeaturesPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\ProjectsPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\ListPages\TeamsPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
